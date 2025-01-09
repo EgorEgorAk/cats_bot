@@ -2,8 +2,10 @@ import requests
 import json
 import telebot
 from telebot import types
+from config import TOKEN
+from config import X_api_key
 
-TOKEN = '7559045513:AAE7uxqbnutZNjaPUJD0LTfugrchKQhkWG4'
+
 
 bot = telebot.TeleBot(TOKEN, parse_mode=None)
 
@@ -29,7 +31,7 @@ def main_message(message):
     url = "https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1"
     headers = {
         'Content-Type': 'application/json',
-        'x-api-key': 'live_eiQcee8Hl47evF38WEsHIzX7M8nJ1HZRxpflNiMbqKMo6rNmxJF89rb0n4I8brRN'
+        'x-api-key': X_api_key
     }
     response = requests.get(url, headers=headers)
     data = json.loads(response.text)
