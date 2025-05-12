@@ -19,8 +19,10 @@ It supports both reply and inline keyboards for user interaction.
 ### 1. Clone the repository or download the script:
 
 ```bash
-git clone https://github.com/yourusername/cat-bot.git
-cd cat-bot
+git clone https://github.com/EgorEgorAk/cat_bot.git
+cd cat_bot
+### 	2.	Install dependencies:
+
 # Install
 <img width="835" alt="image" src="https://github.com/user-attachments/assets/6ad9b4c4-c2b2-4760-8653-2ba00fbe8e3c" />
 # Run the bot 
